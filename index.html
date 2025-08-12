@@ -289,11 +289,12 @@
     </footer>
     
     <script>
+      const API_KEY = typeof WEATHER_API !== 'undefined' ? WEATHER_API : '1108bd1f3f6aef1eadac57b3e2629790';
         document.addEventListener('DOMContentLoaded', function() {
             // API configuration
             const WeatherApp = {
                 config: {
-                    apiKey: 'YOUR_API_KEY_HERE', // Replace with your actual API key
+                    apiKey: API_KEY,
                     baseUrl: 'https://api.openweathermap.org/data/2.5',
                     units: 'metric'
                 },
